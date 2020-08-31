@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+
+    <link rel="manifest" href="site.webmanifest" />
+    <link rel="apple-touch-icon" href="icon.png" />
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/main.css" />
+
+    <meta name="theme-color" content="#fafafa" />
+  </head>
+
+  <body>
+    <!-- Add your site or application content here -->
+    <header>
+      <h1>GRAPEZARD</h1>
+    </header>
+
+    <nav>
+      <ul>
+        <li class="left"><a href="./index.html">Home</a></li>
+        <li><a href="./admin.html">Admin</a></li>
+        <li><a href="./card.html">Cart</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <form id="product-form">
+        <section class="form-sec-fullwidth">
+          <label for="title">Product Title:</label>
+          <input type="text" name="title" id="title" size="30" required />
+        </section>
+        <section class="form-sec-fullwidth">
+          <label for="imgeUrl">Image URL:</label>
+          <input
+            type="imgUrl"
+            name="imgUrl"
+            id="imgUrl"
+            placeholder="https://example.com"
+            pattern="https://.*"
+            size="30"
+            required
+          />
+        </section>
+        <hr />
+        <section id="stock-detail">
+          <div>
+            <label for="price">Price:</label>
+            <input
+              type="number"
+              name="price"
+              id="price"
+              paceholder="0.00"
+              step="any"
+              required
+            />
+          </div>
+          <div>
+            <label for="desc">Stock:</label>
+            <input type="stock" name="stock" id="stock" required />
+          </div>
+        </section>
+        <hr />
+        <section id="product-detail">
+          <section class="form-sec-fullwidth">
+            <label for="caption">Caption:</label>
+            <input type="text" name="caption" id="caption" size="30" required />
+          </section>
+          <section class="form-sec-fullwidth">
+            <label for="desc">Description:</label>
+            <input type="text" name="desc" id="desc" size="30" required />
+          </section>
+        </section>
+        <hr />
+        <section id="stock-detail"></section>
+        <section id="action-item">
+          <button>Submit</button>
+          <button>Cancel</button>
+        </section>
+      </form>
+    </main>
+
+    <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/product.js"></script>
+
+    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+    <script>
+      window.ga = function () {
+        ga.q.push(arguments);
+      };
+      ga.q = [];
+      ga.l = +new Date();
+      ga("create", "UA-XXXXX-Y", "auto");
+      ga("set", "anonymizeIp", true);
+      ga("set", "transport", "beacon");
+      ga("send", "pageview");
+    </script>
+    <script src="https://www.google-analytics.com/analytics.js" async></script>
+  </body>
+</html>
